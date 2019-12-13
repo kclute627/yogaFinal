@@ -31,11 +31,15 @@
                 justify-self: center;
                 font-size: 3rem;
                 color: rgba(58, 58, 58, 0.931);
+                z-index: 6666;
+                margin: 0 auto;
+                text-align: center;
+                
             }
         }
         &-images{
             grid-row: 2/3;
-            grid-column: 2/3;
+            grid-column: 1/-1;
             height: 100%;
             width: 100%;
             overflow: hidden;
@@ -55,6 +59,9 @@
         height: 15rem;
         width: 25rem;
         
+    }
+    &-0{
+        margin-right: -5rem;
     }
 
 }

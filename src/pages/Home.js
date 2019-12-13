@@ -30,13 +30,26 @@ class Home extends Component {
 
 
         <div className="Home__media">
-          <div className="Home__media-header"></div>
-          <div className="Home__media-header-text">Amy In The Media</div>
+          <div className="Home__media-header"> <div className="Home__media-header-text">Amy In The Media</div></div>
+          
           <div className="Home__media-images">
             <AliceCarousel 
-            items={items}
+            items={[today, cbs, today, cbs].map( ( cur, i) =>  (
+              <div className="image">
+                <img className={`image-${i}`} src={cur} alt=""/>
+              </div>
+            ))}
             duration={1600}
-            autoPlay={false}
+            autoPlay={true}
+            responsive={{
+              0: {
+                  items: 1,
+              },
+              1024: {
+                  items: 4,
+              }
+          }}
+            
             
             />
             
