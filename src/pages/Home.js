@@ -30,7 +30,7 @@ class Home extends Component {
         </div>
         <div className="Home__media-images">
             <AliceCarousel
-              items={[today, cbs, forbes, trib, time, cosmo, kelly, elle, windy].map((cur, i) => (
+              items={[today, cbs, forbes, trib, time, cosmo, kelly, forbes, elle, windy].map((cur, i) => (
                 <div className="image">
                   <img className={`image-${i}`} src={cur} alt="" />
                 </div>
@@ -45,7 +45,7 @@ class Home extends Component {
                   items: 1
                 },
                 1024: {
-                  items: 8
+                  items: 7
                 }
               }}
             />

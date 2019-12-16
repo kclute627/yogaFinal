@@ -2,13 +2,13 @@
     background: url('../../assets/home_background.jpg');
     background-size: cover;
     background-position: bottom ;
-    height: 100vh;
+    
     width: 100vw;
 
 
     display: grid;
     grid-template-columns: 10rem 20rem calc(100vw - 30rem);
-    grid-template-rows: 10rem auto 5rem 15rem;
+    grid-template-rows: 10rem calc(80vh - 10rem) 5rem  15rem ;
    
 
 
