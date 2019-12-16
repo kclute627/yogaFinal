@@ -1,21 +1,18 @@
 import React, { Component } from "react";
 import AliceCarousel from "react-alice-carousel";
-import today from "../assets/today.png";
+import today from "../assets/today3.png";
 import cbs from "../assets/cbs.png";
+import trib from '../assets/trib2.png';
+import cosmo from '../assets/Cosmo.png';
+import forbes from '../assets/forbes.png';
+import windy from '../assets/windy.png';
+import kelly from '../assets/kelly.png';
+import time from '../assets/time.png';
+import elle from '../assets/elle.png';
 
 class Home extends Component {
   render() {
-    let items = [
-      [today, cbs, today],
-      [today, cbs, today],
-      [today, cbs, today]
-    ].map((cur, i) => (
-      <div className="image">
-        <img className="image-1" src={cur[0]} alt="" />
-        <img className="image-2" src={cur[1]} alt="" />
-        <img src={cur[2]} alt="" />
-      </div>
-    ));
+    
 
     return (
       <div className="Home">
@@ -29,14 +26,17 @@ class Home extends Component {
           
           
 
-          <div className="Home__media-images">
+          
+        </div>
+        <div className="Home__media-images">
             <AliceCarousel
-              items={[today, cbs, today, cbs].map((cur, i) => (
+              items={[today, cbs, forbes, trib, time, cosmo, kelly, elle, windy].map((cur, i) => (
                 <div className="image">
                   <img className={`image-${i}`} src={cur} alt="" />
                 </div>
               ))}
-              duration={1600}
+              duration={1800}
+              
               autoPlay={true}
               dotsDisabled={true}
               buttonsDisabled={true}
@@ -45,12 +45,11 @@ class Home extends Component {
                   items: 1
                 },
                 1024: {
-                  items: 4
+                  items: 8
                 }
               }}
             />
           </div>
-        </div>
       </div>
     );
   }

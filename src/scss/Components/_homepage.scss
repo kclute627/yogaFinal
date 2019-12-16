@@ -35,10 +35,11 @@
             }
         }
         &-images{
-            grid-row: 4/6;
+            grid-row: 4/5;
             grid-column: 1/-1;
             height: 100%;
             width: 100%;
+            background: rgba(180, 154, 185, 0.548);
             
             
             
@@ -52,11 +53,16 @@
     display: flex;
     justify-items: space-between;
     justify-content: space-around;
-    height: 100%;
-  
+    align-items: center;
+    align-content: center;
+    margin-top: 2rem;
+    cursor: pointer;
+    
     & img {
-        height: 15rem;
-        width: 25rem;
+        height: 10rem;
+        width: 17rem;
+        align-self: center;
+        fill: #000;
         
     }
    
