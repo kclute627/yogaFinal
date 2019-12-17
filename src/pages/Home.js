@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Nav from './Nav';
 import AliceCarousel from "react-alice-carousel";
 import SVG from 'react-inlinesvg';
 import Fade from 'react-reveal/Fade';
@@ -25,17 +26,24 @@ import time from '../assets/time.png';
 import elle from '../assets/elle.png';
 
 class Home extends Component {
+  
+  
+
+
   render() {
+    
     
 
     return (
       <div className="Home">
-        <h1>Home page</h1>
+        
 
 
         <div className="background">
 
         </div>
+
+        <Nav className ="nav" />
 
 
 

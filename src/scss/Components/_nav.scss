@@ -1,0 +1,96 @@
+.nav {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    justify-self: start;
+    align-self: center;
+    cursor: pointer;
+    height: 132px;
+    width: 66px;
+    border-radius: 0 70vh 70vh 0;
+    background: rgba(185, 0, 102, 0.719);
+    transition: all .6s;
+    &:hover{
+      background: rgba(139, 3, 192, 0.719);
+    }
+    &-big{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        background: linear-gradient(rgba(109, 4, 100, 0.6288) 0%, rgba(109, 4, 100, 0.61)100%), url('../../assets/regal.png');
+        height: 100%;
+        width: 35rem;
+        border-radius: 0 80vh 80vh 0;
+        position: relative;
+        justify-self: start;
+        align-self: center;
+        cursor: pointer;
+        transition: all .6s;
+    }
+
+    &-box{
+        margin-left: 1rem;
+        height: 5rem;
+        width: 5rem;
+        
+        
+        &-1{
+       
+        height: 5rem;
+        width: 5rem;
+        position: absolute;
+        top: 45%;
+        right: 5%;
+        cursor: pointer;
+        }
+
+       
+
+
+    }
+    
+
+    &-1 {
+      height: 3px;
+      width: 3.5rem;
+      background: black;
+      opacity: 1;
+      margin-top: 4.9rem;
+      transition: all 0.2s;
+    }
+    &-2 {
+      height: 3px;
+      width: 3.5rem;
+      background: black;
+      margin-top: 0.9rem;
+      transition: all 0.3s;
+    }
+    &-3 {
+      height: 3px;
+      width: 3.5rem;
+      background: black;
+      margin-top: 0.9rem;
+      transition: all 0.5s;
+    }
+    &-4 {
+      transition: all 0.3s;
+      opacity: 0;
+    }
+    &-5 {
+      transition: all 0.3s;
+      transform: skewY(50deg);
+      width: 55%;
+      margin: 0;
+      background: #fff;
+    }
+    &-6 {
+      transition: all 0.3s;
+      transform: skewY(-50deg);
+      width: 55%;
+      margin: 0;
+      background: #fff;
+
+      
+    }
+    &-8{
+      margin-left: .1rem;
+    }
+  }
