@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import AliceCarousel from "react-alice-carousel";
-import {ReactSVG} from 'react-svg';
+import SVG from 'react-inlinesvg';
 import Fade from 'react-reveal/Fade';
 import facebook from '../assets/icons/facebook.svg';
 import today from "../assets/today3.png";
@@ -49,32 +49,34 @@ class Home extends Component {
 
                
             <div className="Home-follow-icon-box facebook">
-              <ReactSVG src={facebook}/>
+              <SVG  title={' '} src={facebook}/>
+                  
+                
             </div>
            
            
               <div className="Home-follow-icon-box twitter">
-              <ReactSVG src={twitter}/>
+              <SVG src={twitter} title={' '}/>
             </div>
            
             
               <div className="Home-follow-icon-box insta">
-              <ReactSVG src={instagram}/>
+              <SVG src={instagram} title={' '}/>
             </div>
             <div className="Home-follow-icon-box spot">
-              <ReactSVG src={spotify}/>
+              <SVG src={spotify} title={' '}/>
             </div>
             <div className="Home-follow-icon-box pin">
-              <ReactSVG src={pinterest}/>
+              <SVG title={' '} src={pinterest}/>
             </div>
             <div className="Home-follow-icon-box snap">
-              <ReactSVG src={snapchat}/>
+              <SVG src={snapchat} title={' '}/>
             </div>
             <div className="Home-follow-icon-box mail">
-              <ReactSVG src={envelope}/>
+              <SVG src={envelope} title={' '}/>
             </div>
             <div className="Home-follow-icon-box skype">
-              <ReactSVG src={skype}/>
+              <SVG src={skype} title={' '}/>
             </div>
            
            
