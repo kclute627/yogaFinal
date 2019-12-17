@@ -23,7 +23,10 @@
         justify-self: start;
         align-self: center;
         cursor: pointer;
-        transition: all .6s;
+        transition: all .4s;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 27% auto;
     }
 
     &-box{
@@ -36,8 +39,10 @@
        
         height: 5rem;
         width: 5rem;
+        padding: 2rem;
+
         position: absolute;
-        top: 45%;
+        top: 35%;
         right: 5%;
         cursor: pointer;
         }
@@ -92,5 +97,23 @@
     }
     &-8{
       margin-left: .1rem;
+    }
+
+    &__menu{
+      grid-row: 2/3;
+      grid-column: 1/2;
+      margin-left: 15%;
+      list-style: none;
+
+
+      &-item{
+        font-size: 2.5rem;
+        list-style: none;
+
+        &:not(:last-child){
+          margin-bottom: .5rem;
+        }
+
+      }
     }
   }
