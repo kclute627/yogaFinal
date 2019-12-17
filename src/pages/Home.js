@@ -101,7 +101,7 @@ class Home extends Component {
         </div>
         <div className="Home__media-images">
             <AliceCarousel
-              items={[today, cbs, forbes, trib, time, cosmo, kelly, forbes, elle, windy].map((cur, i) => (
+              items={[today, cbs, forbes, trib, time,  kelly, forbes, elle, windy].map((cur, i) => (
                 <div className="image">
                   <img className={`image-${i}`} src={cur} alt="" />
                 </div>
