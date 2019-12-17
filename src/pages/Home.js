@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import AliceCarousel from "react-alice-carousel";
+import {ReactSVG} from 'react-svg';
+import Fade from 'react-reveal/Fade';
+import facebook from '../assets/icons/facebook.svg';
 import today from "../assets/today3.png";
+import twitter from '../assets/icons/twitter.svg';
 import cbs from "../assets/cbs.png";
 import trib from '../assets/trib2.png';
 import cosmo from '../assets/Cosmo.png';
@@ -17,6 +21,40 @@ class Home extends Component {
     return (
       <div className="Home">
         <h1>Home page</h1>
+
+        <div className="Home-follow">
+          <div className="Home-follow-text">
+            Follow
+          </div>
+         
+           <div className="Home-follow-icon">
+             <Fade right>
+
+               
+            <div className="Home-follow-icon-box">
+              <ReactSVG src={facebook}/>
+            </div>
+           
+           
+              <div className="Home-follow-icon-box">
+              <ReactSVG src={facebook}/>
+            </div>
+           
+            
+              <div className="Home-follow-icon-box">
+              <ReactSVG src={facebook}/>
+            </div>
+           
+             </Fade>
+           
+            
+            
+          </div>
+         
+          
+          
+          
+        </div>
 
         <div className="Home__media">
           <div className="Home__media-header">
@@ -44,9 +82,19 @@ class Home extends Component {
                 0: {
                   items: 1
                 },
+                900: {
+                  items: 5
+                },
                 1024: {
+                  items: 5
+                },
+                1524: {
+                  items: 5
+                },
+                1924: {
                   items: 7
-                }
+                },
+
               }}
             />
           </div>
