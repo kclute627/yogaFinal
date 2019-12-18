@@ -29,6 +29,7 @@ class Nav extends Component {
         </div>
         <div className={clicked ? "nav__menu" : "none"}>
             <ul>
+              
                 <li className="nav__menu-item">Home</li>
                 <li className="nav__menu-item" >About Amy</li>
                 <li className="nav__menu-item" >Photos</li>

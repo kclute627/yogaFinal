@@ -23,7 +23,7 @@
         position: relative;
         justify-self: start;
         align-self: center;
-        cursor: pointer;
+        
         transition: all .5s;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -101,7 +101,7 @@
       
     }
     &-8{
-      margin-left: .1rem;
+      margin-left: .23em;
     }
 
     &__menu{
@@ -114,6 +114,13 @@
       &-item{
         font-size: 2.5rem;
         list-style: none;
+        cursor: pointer;
+        transition: all .21s;
+
+        &:hover{
+          color: rgb(107, 1, 110);
+         
+        }
 
         &:not(:last-child){
           margin-bottom: .5rem;
