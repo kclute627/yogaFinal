@@ -8,14 +8,10 @@ import today from "../assets/today3.png";
 import twitter from '../assets/icons/twitter.svg';
 import instagram from '../assets/icons/instagram.svg';
 import pinterest from '../assets/icons/pinterest.svg';
-
 import spotify from '../assets/icons/spotify.svg';
 import envelope from '../assets/icons/envelope.svg';
 import snapchat from '../assets/icons/snapchat-ghost.svg';
-
 import skype from '../assets/icons/skype.svg';
-
-
 import cbs from "../assets/cbs.png";
 import trib from '../assets/trib2.png';
 import cosmo from '../assets/Cosmo.png';
@@ -24,6 +20,7 @@ import windy from '../assets/windy.png';
 import kelly from '../assets/kelly.png';
 import time from '../assets/time.png';
 import elle from '../assets/elle.png';
+import logo from "../assets/logo-text-white.png";
 
 class Home extends Component {
   
@@ -42,6 +39,7 @@ class Home extends Component {
         <div className="background">
 
         </div>
+        <img className="Home__logo" src={logo}/>
 
         <Nav className ="nav" />
 
@@ -125,8 +123,14 @@ class Home extends Component {
                 0: {
                   items: 1
                 },
+                450: {
+                  items: 2
+                },
+                800: {
+                  items: 3 
+                },
                 900: {
-                  items: 5
+                  items: 4
                 },
                 1024: {
                   items: 5
