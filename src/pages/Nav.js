@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Fade from 'react-reveal/Fade';
 class Nav extends Component {
   state = {
     clicked: false,
@@ -16,6 +16,9 @@ class Nav extends Component {
     const { clicked } = this.state;
 
     return (
+      <Fade left>
+
+      
       <div className={!clicked ? "nav" : "nav-big"} >
         <div className={!clicked ? "nav-box" : "nav-box-1"} onClick={this.menu}>
           <div className={!clicked ? "nav-1" : "nav-1 nav-6"}></div>
@@ -33,6 +36,7 @@ class Nav extends Component {
             </ul>
         </div>
       </div>
+      </Fade>
     );
   }
 }
