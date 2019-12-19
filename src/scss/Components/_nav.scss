@@ -10,6 +10,7 @@
     border-radius: 0 70vh 70vh 0;
     background: rgba(185, 0, 102, 0.719);
     transition: all .5s ease-in;
+    position: relative;
     &:hover{
       background: rgba(139, 3, 192, 0.719);
     }
