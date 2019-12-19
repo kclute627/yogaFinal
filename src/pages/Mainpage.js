@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
 
 
 
@@ -38,14 +39,18 @@ class Mainpage extends Component {
         )
         const photos= (
             <div className="mainpage__photos">
-                
+
             </div>
         )
 
 
         return(
             <div className="mainpage__container">
-               {home}
+                <Fade right>
+                 {home}   
+                </Fade>
+
+               
             </div>
         )
     }
