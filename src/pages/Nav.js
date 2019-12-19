@@ -13,7 +13,15 @@ class Nav extends Component {
       clicked: !this.state.clicked
     });
   };
+  
+  pageClick = (p)=> {
+    
+    this.setState({
+      clicked: !this.state.clicked
+    });
 
+    this.props.page(p)
+  }
   
 
   render() {
@@ -34,10 +42,10 @@ class Nav extends Component {
         <div className={clicked ? "nav__menu" : "none"}>
             <ul>
 
-                <li className="nav__menu-item" onclick={()=>this.props.page('home')}>Home</li>
-                <li className="nav__menu-item" onclick={()=>this.props.page('about')}>About Amy</li>
-                <li className="nav__menu-item" onclick={()=>this.props.page('photos')}>Photos</li>
-                <li className="nav__menu-item" onclick={()=>this.props.page('contact')}>Contact Amy</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('home')}>Home</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('about')}>About Amy</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('photos')}>Photos</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('contact')}>Contact Amy</li>
             </ul>
         </div>
       </div>
