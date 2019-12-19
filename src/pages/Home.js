@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Nav from './Nav';
+import Mainpage from './Mainpage';
 import AliceCarousel from "react-alice-carousel";
 import SVG from 'react-inlinesvg';
 import Fade from 'react-reveal/Fade';
@@ -34,7 +35,7 @@ class Home extends Component {
     return (
       <div className="Home">
         
-
+        <Mainpage className="mainpage"/>
 
         <div className="background">
 
