@@ -73,6 +73,8 @@
     &:hover {
       border: none;
       background: none;
+     
+
 
       
 
@@ -85,18 +87,24 @@
 
     &:hover &-icon {
       display: flex;
+      
+
+      
 
      
      
 
 
     }
+    &:hover &-icon-box{
+     
+    }
 
   
 
     &-icon {
       display: none;
-      
+      transition: all 1.4s;
 
     
       &-box {
@@ -109,9 +117,9 @@
         align-items: center;
         justify-content: center;
         align-content: center;
-        margin-right: 1.5rem;
+       margin-right: 1.5rem;
 
-        transition: all .4s;
+        transition: all 1.4s;
 
 
        
