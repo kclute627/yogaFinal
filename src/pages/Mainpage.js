@@ -10,7 +10,7 @@ class Mainpage extends Component {
     render(){
 
         const home = (
-            <Fade right>
+          
             <div className="mainpage__home">
                 
 
@@ -31,11 +31,11 @@ class Mainpage extends Component {
                 
 
             </div> 
-            </Fade>
+           
         )
 
         const about = (
-            <Fade right>
+        
             <div className="mainpage__about">
                
                     ABOUT ABOUT 
@@ -43,29 +43,34 @@ class Mainpage extends Component {
                 
 
             </div>
-            </Fade>
+          
         )
         const contact = (
-            <Fade right>
+         
 
             
             <div className="mainpage__contact">
                 CONTACT 
             </div>
-            </Fade>
+            
         )
         const photos= (
-            <Fade right>
+            
 
             
             <div className="mainpage__photos">
                 PHOTOS
             </div>
-            </Fade>
+            
         )
 
 
         return(
+        
+
+           
+
+      
             <div className="mainpage__container">
                 
 
@@ -75,6 +80,8 @@ class Mainpage extends Component {
                 
                 
             </div>
+            
+           
         )
     }
 } 
