@@ -10,8 +10,9 @@ class Mainpage extends Component {
     render(){
 
         const home = (
+            <Fade right>
             <div className="mainpage__home">
-                <Fade right>
+                
 
                
                 <div className="mainpage__home-header">
@@ -27,19 +28,22 @@ class Mainpage extends Component {
                     <button className="mainpage__home-btn">Schedule a Session</button>
                     
                 </div>
-                </Fade>
+                
 
-            </div>
+            </div> 
+            </Fade>
         )
 
         const about = (
+            <Fade right>
             <div className="mainpage__about">
-                <Fade right>
+               
                     ABOUT ABOUT 
-                </Fade>
+                
                 
 
             </div>
+            </Fade>
         )
         const contact = (
             <div className="mainpage__contact">
