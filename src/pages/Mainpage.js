@@ -46,14 +46,22 @@ class Mainpage extends Component {
             </Fade>
         )
         const contact = (
+            <Fade right>
+
+            
             <div className="mainpage__contact">
                 CONTACT 
             </div>
+            </Fade>
         )
         const photos= (
+            <Fade right>
+
+            
             <div className="mainpage__photos">
                 PHOTOS
             </div>
+            </Fade>
         )
 
 
