@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import {connect} from 'react-redux';
+import { setPage } from '../store/taskActions.js';
 import Fade from 'react-reveal/Fade';
 class Nav extends Component {
   state = {
@@ -11,6 +13,16 @@ class Nav extends Component {
       clicked: !this.state.clicked
     });
   };
+  
+  pageClick = (p)=> {
+    
+    this.setState({
+      clicked: !this.state.clicked
+    });
+
+    this.props.page(p)
+  }
+  
 
   render() {
     const { clicked } = this.state;
@@ -29,11 +41,11 @@ class Nav extends Component {
         </div>
         <div className={clicked ? "nav__menu" : "none"}>
             <ul>
-              
-                <li className="nav__menu-item">Home</li>
-                <li className="nav__menu-item" >About Amy</li>
-                <li className="nav__menu-item" >Photos</li>
-                <li className="nav__menu-item" >Contact Amy</li>
+
+                <li className="nav__menu-item" onClick={()=>this.pageClick('home')}>Home</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('about')}>About Amy</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('photos')}>Photos</li>
+                <li className="nav__menu-item" onClick={()=>this.pageClick('contact')}>Contact Amy</li>
             </ul>
         </div>
       </div>
@@ -42,4 +54,10 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+const mapDispatchToProps = (dispatch) =>{
+  return {
+    page: (page)=>dispatch(setPage(page))
+  }
+}
+
+export default connect(null, mapDispatchToProps)(Nav);
