@@ -68,10 +68,12 @@ class Mainpage extends Component {
         return(
             <div className="mainpage__container">
                 
+
+            
                      {this.props.menu === 'home' ? home : this.props.menu === 'contact' ? 
                contact : this.props.menu === 'about' ? about : this.props.menu === 'photos' ? photos : home }
                 
-              
+                
             </div>
         )
     }
