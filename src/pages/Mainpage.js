@@ -62,8 +62,8 @@ class Mainpage extends Component {
                 <div className="contact-header">
                     <div className="contact-header-1">Contact Amy</div>
                     <div className="contact-header-2">Schedule a Home Yoga Session</div>
-                    <input type="email" className="contact-header-email"/>
-                    <input type="submit" value='Submit' className="contact-header-submit"/>
+                    <input type="email" placeholder='EMAIL' className="contact-header-email"/>
+                    <input type="submit" value='Submit' className="contact-btn"/>
                 </div>
             </div>
             </Fade>
