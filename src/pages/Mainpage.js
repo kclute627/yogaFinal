@@ -10,6 +10,10 @@ class Mainpage extends Component {
     render(){
 
         const home = (
+            <Fade right>
+
+
+            
           
             <div className="mainpage__home">
                 
@@ -31,36 +35,51 @@ class Mainpage extends Component {
                 
 
             </div> 
+            </Fade>
            
         )
 
         const about = (
+            <Fade right>
+
+            
         
-            <div className="mainpage__about">
+            <div className="about">
                
                     ABOUT ABOUT 
                 
                 
 
             </div>
+            </Fade>
           
         )
         const contact = (
          
-
+            <Fade right>          
             
-            <div className="mainpage__contact">
-                CONTACT 
+            <div className="contact">
+                <div className="contact-header">
+                    <div className="contact-header-1">Contact Amy</div>
+                    <div className="contact-header-2">Schedule a Home Yoga Session</div>
+                    <input type="email" className="contact-header-email"/>
+                    <input type="submit" value='Submit' className="contact-header-submit"/>
+                </div>
             </div>
+            </Fade>
             
         )
         const photos= (
             
 
-            
+            <Fade right>
+
+           
             <div className="mainpage__photos">
                 PHOTOS
             </div>
+
+            </Fade>
             
         )
 
@@ -69,7 +88,9 @@ class Mainpage extends Component {
         
 
            
+           
 
+            
       
             <div className="mainpage__container">
                 
@@ -80,6 +101,7 @@ class Mainpage extends Component {
                 
                 
             </div>
+          
             
            
         )
