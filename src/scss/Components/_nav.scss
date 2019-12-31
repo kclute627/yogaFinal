@@ -51,6 +51,19 @@
         top: 35%;
         right: 5%;
         cursor: pointer;
+        transition: all .5s;
+
+        &:hover  {
+
+          .nav-6, .nav-5 {
+            background: rgb(179, 179, 179);
+          }
+         
+
+          
+        }
+
+        
         }
 
        
@@ -91,6 +104,7 @@
       width: 55%;
       margin: 0;
       background: #fff;
+
     }
     &-6 {
       transition: all 0.3s;
@@ -98,6 +112,8 @@
       width: 55%;
       margin: 0;
       background: #fff;
+
+      
 
       
     }

@@ -90,17 +90,18 @@ class Mainpage extends Component {
            
            
 
-            
+            <Fade right duration={5000}>
       
             <div className="mainpage__container">
+                {this.props.menu === 'home' ? home :null}
+                {this.props.menu === 'contact' ? contact : null}
+                {this.props.menu === 'about' ? about : null}
+                { this.props.menu === 'photos' ? photos :null}
+                { !this.props.menu ? 'home' : null}
                 
 
-            
-                     {this.props.menu === 'home' ? home : this.props.menu === 'contact' ? 
-               contact : this.props.menu === 'about' ? about : this.props.menu === 'photos' ? photos : home }
-                
-                
             </div>
+            </Fade>
           
             
            
