@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 const store = createStore(reducer,  composeWithDevTools())
 
-console.log(store)
+console.log(store)  
 
 
 ReactDOM.render(
