@@ -6,6 +6,26 @@
     margin-left: 20%;
     margin-bottom: 11%;
 
+    @media(max-width: 1600px){
+        margin-left: 11%;
+    }
+    @media(max-width: 1200px){
+        margin-left: 1%;
+    }
+    @media(max-width: 1000px){
+        margin-left: -7%;
+    }
+
+    @media(max-width: 900px){
+        margin-left: -16%;
+    }
+    @media(max-width: 800px){
+        margin-left: -29%;
+    }
+    @media(max-width: 600px){
+        margin-left: -75%;
+    }
+
     
     
 

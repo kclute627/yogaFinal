@@ -16,7 +16,10 @@
         align-self: center;
         justify-self: start;
         margin-left: 12%;
-        ;
+        
+        @media(max-width: 1600px){
+            margin-left: 1%;
+        }
 
         
         
