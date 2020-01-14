@@ -49,7 +49,7 @@
   "bugs": {
     "url": "https://github.com/kclute627/yoga/issues"
   },
-  "homepage": "https://github.com/kclute627/yoga#readme",
+  "homepage": "",
   "devDependencies": {
     "react-svg": "^11.0.3",
     "redux": "^4.0.4"
