@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 class Nav extends Component {
   state = {
     clicked: false,
-    listClick: false
+    listClick: false,
   }
 
   menu = () => {
