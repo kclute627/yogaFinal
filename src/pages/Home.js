@@ -14,7 +14,7 @@ import envelope from '../assets/icons/envelope.svg';
 import snapchat from '../assets/icons/snapchat-ghost.svg';
 import skype from '../assets/icons/skype.svg';
 import cbs from "../assets/cbs.png";
-import trib from '../assets/trib2.png';
+import trib from '../assets/trib2.png' ;
 import cosmo from '../assets/Cosmo.png';
 import forbes from '../assets/forbes.png';
 import windy from '../assets/windy.png';
